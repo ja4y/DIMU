@@ -1,0 +1,297 @@
+.light-mode {
+  background-color: #faf9f5;
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: #faf9f5;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #faf9f5;
+  color: #000000;
+}
+.custom-bg {
+  background-color: #000000 !important;
+}
+
+/* Sticky Navi */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+}
+
+.navbar-brand,.nav-link {
+  font-size: xx-large;
+  color: #faf9f5 !important;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: #faf9f5 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f4d03f !important;
+}
+
+/* Hero Section */
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Parallax Hero */
+#hero-video {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+
+#hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #000000;
+  color: #faf9f5;
+}
+
+body.dark-mode .navbar-dark {
+  background-color: #000000;
+}
+
+body.dark-mode .bg-light {
+  background-color: #000000 !important;
+}
+
+body.dark-mode .bg-dark {
+  background-color: #000000 !important;
+}
+
+/* Light Mode */
+body.light-mode {
+  background-color: #faf9f5;
+  color: #000000 ;
+}
+
+body.light-mode .navbar-dark {
+  background-color: #faf9f5;
+}
+
+/* Section Styles */
+section {
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: transform 0.5s ease-in-out, color 0.5s;
+  cursor: pointer;
+}
+
+.section-title:hover {
+  color: #f4d03f;
+  transform: scale(1.1);
+}
+
+/* Left and Right Text Alignment */
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Button Styles */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f4d03f;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 10px;
+  display: none;
+  
+}
+
+#topBtn:hover {
+  background-color: #ff5000;
+}
+
+/* Dark/Light Mode Button */
+#modeSwitch {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #f4d03f;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+#modeSwitch:hover {
+  background-color: #ff5000;
+}
+
+/* Scroll to Top Button */
+#topBtn {
+  display: none;
+  opacity: 0.8;
+}
+
+#topBtn:hover {
+  background-color: #ff5000;
+}
+
+/* Custom Animations for Titles */
+.animated-title {
+  animation: slideIn 1s ease-in-out;
+}
+
+a {
+  color: #ff5000;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #faf9f5;
+  text-align: center;
+  padding: 20px;
+}
+
+/* kuvakehykset */
+.profile {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #faf9f5;
+  transition: transform 0.5s;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+}
+
+/* Some ikonit */
+.social-media a {
+  margin: 10px;
+  color: #faf9f5;
+  font-size: 10px;
+  text-decoration: none;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.social-media a:hover {
+  color: #ff5000;
+  transform: scale(1.2);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.btn:hover {
+  color: #faf9f5;
+  background-color: #f4d03f
+  border-color:#000000
+}
+.btn {
+  cursor: pointer;
+}
+
+/*responsiivisuus!*/
+
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.hero p {
+  text-align: center;
+  font-size: 16px;
+  
+}
+
+.btn-dark {
+  --bs-btn-color: #000000;
+  --bs-btn-bg: #f4d03f;
+  --bs-btn-border-color: #faf9f5;
+  
+  --bs-btn-hover-bg: #ff5000;;
+}
+
+/* Hamburger Animation */
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 50px;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  margin: 7px 0;
+  transition: 0.5s;
+}
+
+.center:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.center:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.center:hover div {
+  transform: scale(0);
+}

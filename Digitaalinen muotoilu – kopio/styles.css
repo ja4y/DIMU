@@ -1,0 +1,343 @@
+.light-mode {
+  background-color: #faf9f5;
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: #faf9f5;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #faf9f5;
+  color: #000000;
+}
+.custom-bg {
+  background-color: #000000 !important;
+}
+
+/* Sticky Navi */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+}
+
+.navbar-brand,
+.nav-link {
+  font-size: xx-large;
+  color: #faf9f5 !important;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: #faf9f5 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff200 !important;
+}
+
+/* Hero Section */
+
+.hero p {
+  font-weight: bold;
+  margin-top: 25%;
+  margin-left: 20%;
+  margin-right: 50%;
+  margin-bottom: -25%;
+}
+h1 {
+  letter-spacing: 2px;
+  margin-left: 10%;
+}
+/* Parallax Hero */
+#hero-video {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+
+#hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* swiper karuselli */
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* karuselli loppuu */
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #fff200;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #000000;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #000000;
+  color: #faf9f5;
+}
+
+body.dark-mode .navbar-dark {
+  background-color: #000000;
+}
+
+body.dark-mode .bg-light {
+  background-color: #000000 !important;
+}
+
+body.dark-mode .bg-dark {
+  background-color: #000000 !important;
+}
+
+/* Light Mode */
+body.light-mode {
+  background-color: #faf9f5;
+  color: #000000;
+}
+
+body.light-mode .navbar-dark {
+  background-color: #faf9f5;
+}
+
+/* Section Styles */
+section {
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: transform 0.5s ease-in-out, color 0.5s;
+  cursor: pointer;
+}
+
+.section-title:hover {
+  color: #fff200;
+  transform: scale(1.1);
+}
+
+/* Left and Right Text Alignment */
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Button Styles */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff200;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 10px;
+  display: none;
+}
+
+#topBtn:hover {
+  background-color: #ff5000;
+}
+
+/* Dark/Light Mode Button */
+#modeSwitch {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #fff200;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+#modeSwitch:hover {
+  background-color: #ff5000;
+}
+
+/* Scroll to Top Button */
+#topBtn {
+  display: none;
+  opacity: 0.8;
+}
+
+#topBtn:hover {
+  background-color: #ff5000;
+}
+
+/* Custom Animations for Titles */
+.animated-title {
+  animation: slideIn 1s ease-in-out;
+}
+
+a {
+  color: #ff5000;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #faf9f5;
+  text-align: center;
+  padding: 50px;
+}
+
+/* kuvakehykset */
+.profile {
+  display: inline-block;
+  margin: 25px;
+  text-align: center;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #faf9f5;
+  transition: transform 0.5s;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+}
+
+/* Some ikonit */
+.social-media a {
+  margin: 10px;
+  color: #faf9f5;
+  font-size: 40px;
+  text-decoration: none;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.social-media a:hover {
+  color: #ff5000;
+  transform: scale(1.2);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.btn:hover {
+  color: #faf9f5;
+  background-color: #fff200;
+  border-color: #000000;
+}
+
+.btn {
+  cursor: pointer;
+}
+/*responsiivisuus!*/
+
+@media only screen and (max-width: 830px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.hero p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn-dark {
+  --bs-btn-color: #000000;
+  --bs-btn-bg: #fff200;
+  --bs-btn-border-color: #faf9f5;
+
+  --bs-btn-hover-bg: #ff5000;
+  margin-top: 25%;
+  margin-left: 25%;
+}
+
+.dark-mode .panel-body {
+  color: #000000;
+}
